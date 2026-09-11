@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ambient Light | Autó világítás</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080808;
+            color: white;
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+
+            background:
+                linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.9)),
+                url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2000&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero {
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 8vw, 90px);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+
+            text-shadow:
+                0 0 10px #8a2be2,
+                0 0 30px #8a2be2;
+        }
+
+        .hero p {
+            font-size: 21px;
+            color: #ddd;
+            margin-bottom: 35px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 16px 35px;
+            border-radius: 50px;
+            background: #8a2be2;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 0 20px #8a2be2;
+        }
+
+        .button:hover {
+            transform: scale(1.06);
+            box-shadow: 0 0 40px #8a2be2;
+        }
+
+        section {
+            padding: 90px 8%;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 50px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #111;
+            padding: 35px;
+            border-radius: 20px;
+            border: 1px solid #252525;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #8a2be2;
+            box-shadow: 0 0 25px rgba(138,43,226,0.3);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #b66cff;
+            font-size: 23px;
+        }
+
+        .card p {
+            color: #bbb;
+            line-height: 1.6;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .about p {
+            color: #bbb;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .contact {
+            text-align: center;
+            background: #0d0d0d;
+        }
+
+        .contact p {
+            color: #bbb;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #666;
+            background: #050505;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                padding: 70px 20px;
+            }
+
+            .hero h1 {
+                letter-spacing: 2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="hero">
+            <h1>Ambient Light</h1>
+
+            <p>
+                Egyedi hangulatvilágítás autód belső terébe.
+                Modern megjelenés, egyedi stílus.
+            </p>
+
+            <a href="#kapcsolat" class="button">
+                Érdeklődj most
+            </a>
+        </div>
+    </header>
+
+
+    <section>
+        <h2 class="title">Szolgáltatások</h2>
+
+        <div class="services">
+
+            <div class="card">
+                <h3>Ambient Light</h3>
+                <p>
+                    Egyedi LED hangulatvilágítás beszerelése
+                    különböző típusú autókba.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Egyedi kialakítás</h3>
+                <p>
+                    A világítás elhelyezését és megjelenését
+                    az autóhoz és az elképzeléseidhez igazítjuk.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Többféle szín</h3>
+                <p>
+                    Választható színek és különböző
+                    fényhatások a kívánt hangulathoz.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section>
+        <div class="about">
+
+            <h2 class="title">Rólam</h2>
+
+            <p>
+                Kezdőként foglalkozom autók Ambient Light
+                világításának beszerelésével. Minden munkát
+                nagy odafigyeléssel és precízen végzek,
+                hogy az elkészült világítás igényesen
+                illeszkedjen az autó belsejéhez.
+            </p>
+
+        </div>
+    </section>
+
+
+    <section class="contact" id="kapcsolat">
+
+        <h2 class="title">Kapcsolat</h2>
+
+        <p>
+            Szeretnéd egyedibbé tenni az autód belsejét?
+            Írj nekem és beszéljük meg a lehetőségeket!
+        </p>
+
+        <a href="mailto:email@example.com" class="button">
+            Kapcsolatfelvétel
+        </a>
+
+    </section>
+
+
+    <footer>
+        © 2026 Ambient Light – Minden jog fenntartva.
+    </footer>
+
+</body>
+</html>
