@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="hu">
 <head>
@@ -15,7 +16,12 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #080808;                                
+            background-color: #080808;
+            background-image: url("https://pictureurl.com/api/storage/file?key=u%2Fanon%2F0f7ccc30-a519-4e57-9ba6-9f7a2102b167-hatter.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             color: white;
         }
 
@@ -26,16 +32,7 @@
             justify-content: center;
             text-align: center;
             padding: 40px 20px;
-                        
-           body{
-               backgorund-image: url(https://pictureurl.com/api/storage/file?key=u%2Fanon%2F0f7ccc30-a519-4e57-9ba6-9f7a2102b167-hatter.jpg);
-               background-size: cover;
-               backgorund-postition: center;
-               background-repeat: no-repeart;
-               backgorunattachment: fixed;
-
-            background-size: cover;
-            background-position: center;
+            background: rgba(0, 0, 0, 0.35);
         }
 
         .hero {
@@ -62,6 +59,7 @@
         .button {
             display: inline-block;
             padding: 16px 35px;
+            margin: 8px;
             border-radius: 50px;
             background: #8a2be2;
             color: white;
@@ -78,6 +76,7 @@
 
         section {
             padding: 90px 8%;
+            background: rgba(0, 0, 0, 0.55);
         }
 
         .title {
@@ -93,7 +92,7 @@
         }
 
         .card {
-            background: #111;
+            background: rgba(17, 17, 17, 0.9);
             padding: 35px;
             border-radius: 20px;
             border: 1px solid #252525;
@@ -103,7 +102,7 @@
         .card:hover {
             transform: translateY(-8px);
             border-color: #8a2be2;
-            box-shadow: 0 0 25px rgba(138,43,226,0.3);
+            box-shadow: 0 0 25px rgba(138, 43, 226, 0.3);
         }
 
         .card h3 {
@@ -131,7 +130,7 @@
 
         .contact {
             text-align: center;
-            background: #0d0d0d;
+            background: rgba(13, 13, 13, 0.9);
         }
 
         .contact p {
@@ -144,7 +143,7 @@
             text-align: center;
             padding: 25px;
             color: #666;
-            background: #050505;
+            background: rgba(5, 5, 5, 0.95);
         }
 
         @media (max-width: 600px) {
@@ -163,6 +162,7 @@
 
     <header>
         <div class="hero">
+
             <h1>Ambient Light</h1>
 
             <p>
@@ -173,33 +173,40 @@
             <a href="#kapcsolat" class="button">
                 Érdeklődj most
             </a>
+
         </div>
     </header>
 
 
     <section>
+
         <h2 class="title">Szolgáltatások</h2>
 
         <div class="services">
 
             <div class="card">
                 <h3>Ambient Light</h3>
+
                 <p>
                     Egyedi LED hangulatvilágítás beszerelése
                     különböző típusú autókba.
                 </p>
             </div>
 
+
             <div class="card">
                 <h3>Egyedi kialakítás</h3>
+
                 <p>
                     A világítás elhelyezését és megjelenését
                     az autóhoz és az elképzeléseidhez igazítjuk.
                 </p>
             </div>
 
+
             <div class="card">
                 <h3>Többféle szín</h3>
+
                 <p>
                     Választható színek és különböző
                     fényhatások a kívánt hangulathoz.
@@ -207,35 +214,34 @@
             </div>
 
         </div>
+
     </section>
 
 
     <section>
+
         <div class="about">
-        
         </div>
+
     </section>
 
 
     <section class="contact" id="kapcsolat">
 
         <h2 class="title">Kapcsolatfelvétel</h2>
-    
-        <a href="mailto:email@example.com" class="button">
-            sms/tel :06309921819
-           
+
+        <a href="tel:06309921819" class="button">
+            📞 06309921819
         </a>
-       <a href="mailto:emate722@gmail.com" class="button">
-             email :emate722@gmail.com
-            
+
+        <a href="mailto:emate722@gmail.com" class="button">
+            ✉️ emate722@gmail.com
         </a>
-         
+
+        <a href="#" class="button">
+            📍 Szombathely
         </a>
-       <a href="mailto:emate722@gmail.com" class="button">
-             VÁROS:SZOMBATHELY
-            
-        </a>
-        
+
     </section>
 
 
@@ -245,3 +251,5 @@
 
 </body>
 </html>
+```
+
